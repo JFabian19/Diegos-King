@@ -96,11 +96,11 @@ export const DEFAULT_MENU_DATA: Category[] = [
     kicker: "Ponle más power",
     descripcion: "Complementos para personalizar tu pedido.",
     items: [
-      { nombre: "Papas personales", descripcion: "Porción de papas doradas.", precio: "S/ 6.00" },
-      { nombre: "Salsa de queso", descripcion: "Vasito de queso cremoso.", precio: "S/ 3.00" },
+      { nombre: "Porción de papas", descripcion: "Porción de papas doradas y recién hechas.", precio: "S/ 8.00" },
       { nombre: "Salchicha extra", descripcion: "Porción adicional de salchicha.", precio: "S/ 4.00" },
-      { nombre: "Perlas de tapioca", descripcion: "Extra de tapioca para tu bebida.", precio: "S/ 2.50" },
-      { nombre: "Popping boba", descripcion: "Extra de perlas frutales.", precio: "S/ 3.00" }
+      { nombre: "Tapioca o bolas explosivas", descripcion: "Extra de perlas para tu bubble tea.", precio: "S/ 5.00" },
+      { nombre: "Plátano extra", descripcion: "Porción adicional de plátano.", precio: "S/ 5.00" },
+      { nombre: "Huevo extra", descripcion: "Huevo frito para completar tu plato.", precio: "S/ 3.00" }
     ]
   }
 ];

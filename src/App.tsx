@@ -41,22 +41,23 @@ function App() {
     <div className="site-shell">
       <header className="topbar">
         <a className="brand" href="#inicio" aria-label="Ir al inicio"><img src="/media/logo-diegos-king.png" alt="Diego's King" /></a>
+        <div className="king-note" aria-label="I love Diego's King"><span>I</span><b>♥</b><span>DK</span></div>
         <button className="bag-button" onClick={() => setCartOpen(true)} aria-label={`Abrir pedido, ${cartCount} productos`}>
           <ShoppingBag size={20} /><span>Pedido</span><b>{cartCount}</b>
         </button>
       </header>
 
       <div className="ticker" aria-hidden="true"><div>
-        {[0, 1, 2, 3].map(i => <span key={i}>PAPAS SIN MIEDO <i>✦</i> ALITAS CON CORONA <i>✦</i> BUBBLE TEA BIEN FRÍO <i>✦</i> </span>)}
+        {[0, 1, 2, 3].map(i => <span key={i}>HOLA, MIS KINGLOVERS <i>♥</i> PAPAS SIN MIEDO <i>✦</i> ALITAS CON CORONA <i>✦</i> </span>)}
       </div></div>
 
       <main>
         <section className="hero" id="inicio">
           <div className="hero-image" aria-hidden="true" /><div className="hero-shade" />
           <div className="hero-copy">
-            <div className="eyebrow"><Flame size={16} /> HECHO AL MOMENTO</div>
-            <h1>EL ANTOJO<br />MANDA <em>AQUÍ.</em></h1>
-            <p>Conos cargados, alitas bañadas y bubble tea para bajar el fuego.</p>
+            <div className="eyebrow"><Flame size={16} /> HOLA, PAPERITOS</div>
+            <h1>HOLA, MIS<br /><em>KING<wbr />LOVERS.</em></h1>
+            <p>El antojo manda aquí: conos cargados, alitas bañadas y bubble tea para compartir.</p>
             <button className="primary-cta" onClick={() => scrollTo('conos')}>VER LA CARTA <ChevronDown size={18} /></button>
           </div>
           <div className="price-stamp"><small>CONOS DESDE</small><strong>S/ 16</strong><span>Precios referenciales</span></div>
@@ -99,7 +100,7 @@ function App() {
         <section className="mascot-callout"><img src="/media/mascota.png" alt="Mascota de Diego's King" /><div><span>¿YA ELEGISTE?</span><h2>NO DEJES QUE<br />SE ENFRÍE.</h2><button onClick={() => setCartOpen(true)}>REVISAR MI PEDIDO <ShoppingBag size={18} /></button></div></section>
       </main>
 
-      <footer><img src="/media/logo-diegos-king.png" alt="Diego's King" /><p>Papas · Alitas · Bubble Tea</p><small>© 2026 Diego's King · Carta digital</small></footer>
+      <footer><span className="since">SINCE 2019</span><img src="/media/logo-diegos-king.png" alt="Diego's King" /><p>Papas · Alitas · Bubble Tea</p><small>© 2026 Diego's King · Carta digital</small></footer>
 
       <AnimatePresence>{cartCount > 0 && !cartOpen && (
         <motion.button className="floating-cart" initial={{ y: 90, x: '-50%' }} animate={{ y: 0, x: '-50%' }} exit={{ y: 90, x: '-50%' }} onClick={() => setCartOpen(true)}><span><ShoppingBag size={20} /><b>{cartCount}</b> productos</span><strong>S/ {total.toFixed(2)}</strong></motion.button>
