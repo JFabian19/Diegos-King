@@ -56,11 +56,13 @@ function App() {
           <div className="hero-image" aria-hidden="true" /><div className="hero-shade" />
           <div className="hero-copy">
             <div className="eyebrow"><Flame size={16} /> HOLA, PAPERITOS</div>
-            <h1>HOLA, MIS<br /><em>KING<wbr />LOVERS.</em></h1>
+            <h1>Hola, mis<br /><em>King<wbr />lovers.</em></h1>
             <p>El antojo manda aquí: conos cargados, alitas bañadas y bubble tea para compartir.</p>
             <button className="primary-cta" onClick={() => scrollTo('conos')}>VER LA CARTA <ChevronDown size={18} /></button>
           </div>
-          <div className="price-stamp"><small>CONOS DESDE</small><strong>S/ 16</strong><span>Precios referenciales</span></div>
+          <div className="bartolito-badge" aria-label="Bartolito, mascota de Diego's King">
+            <img src="/media/bartolito.png" alt="Bartolito" />
+          </div>
         </section>
 
         <section className="quick-info" aria-label="Características">
@@ -69,7 +71,7 @@ function App() {
           <div><Star /><span><b>COMBOS KING</b><small>Perfectos para compartir</small></span></div>
         </section>
 
-        <section className="menu-intro"><span>LA CARTA · DIEGO'S KING</span><h2>ELIGE TU<br /><em>ANTOJO.</em></h2><p>Arma tu pedido y copia el resumen cuando estés listo.</p></section>
+        <section className="menu-intro"><span>LA CARTA · DIEGO'S KING</span><h2>Elige tu<br /><em>antojo.</em></h2><p>Arma tu pedido y copia el resumen cuando estés listo.</p></section>
 
         <nav className="category-nav" aria-label="Categorías del menú">
           {DEFAULT_MENU_DATA.map(category => (
@@ -97,7 +99,7 @@ function App() {
           ))}
         </div>
 
-        <section className="mascot-callout"><img src="/media/mascota.png" alt="Mascota de Diego's King" /><div><span>¿YA ELEGISTE?</span><h2>NO DEJES QUE<br />SE ENFRÍE.</h2><button onClick={() => setCartOpen(true)}>REVISAR MI PEDIDO <ShoppingBag size={18} /></button></div></section>
+        <section className="mascot-callout"><img src="/media/mascota.png" alt="Mascota de Diego's King" /><div><span>¿YA ELEGISTE?</span><h2>No dejes que<br />se enfríe.</h2><button onClick={() => setCartOpen(true)}>REVISAR MI PEDIDO <ShoppingBag size={18} /></button></div></section>
       </main>
 
       <footer><span className="since">SINCE 2019</span><img src="/media/logo-diegos-king.png" alt="Diego's King" /><p>Papas · Alitas · Bubble Tea</p><small>© 2026 Diego's King · Carta digital</small></footer>
