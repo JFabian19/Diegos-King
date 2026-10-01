@@ -102,7 +102,12 @@ function App() {
         <section className="mascot-callout"><img src="/media/mascota.png" alt="Mascota de Diego's King" /><div><span>¿YA ELEGISTE?</span><h2>No dejes que<br />se enfríe.</h2><button onClick={() => setCartOpen(true)}>REVISAR MI PEDIDO <ShoppingBag size={18} /></button></div></section>
       </main>
 
-      <footer><span className="since">SINCE 2019</span><img src="/media/logo-diegos-king.png" alt="Diego's King" /><p>Papas · Alitas · Bubble Tea</p><small>© 2026 Diego's King · Carta digital</small></footer>
+      <footer>
+        <span className="since">SINCE 2019</span>
+        <img src="/media/logo-footer.png" alt="Diego's King" />
+        <p>Papas · Alitas · Bubble Tea</p>
+        <small>© 2026 Diego's King · Carta digital</small>
+      </footer>
 
       <AnimatePresence>{cartCount > 0 && !cartOpen && (
         <motion.button className="floating-cart" initial={{ y: 90, x: '-50%' }} animate={{ y: 0, x: '-50%' }} exit={{ y: 90, x: '-50%' }} onClick={() => setCartOpen(true)}><span><ShoppingBag size={20} /><b>{cartCount}</b> productos</span><strong>S/ {total.toFixed(2)}</strong></motion.button>

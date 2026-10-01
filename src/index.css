@@ -77,11 +77,12 @@ button { cursor:pointer; }
 .mascot-callout img { width:100%; aspect-ratio:1; object-fit:cover; border-radius:50%; border:8px solid white; outline:5px solid var(--ink); transform:rotate(-6deg); box-shadow:12px 12px 0 var(--red); }
 .mascot-callout h2 { font-size:clamp(2.7rem,6vw,5.2rem); margin:8px 0 24px; }
 .mascot-callout button { border:2px solid var(--ink); background:var(--red); color:white; border-radius:10px; padding:14px 18px; display:inline-flex; align-items:center; gap:10px; font-weight:900; box-shadow:5px 5px 0 var(--ink); }
-footer { background:var(--ink); color:white; padding:55px 20px; text-align:center; }
-footer img { width:180px; height:150px; object-fit:contain; }
-footer p { font-family:"Manrope",sans-serif; font-weight:800; color:var(--yellow); }
-footer small { color:#989898; }
-footer .since { display:block; width:max-content; margin:0 auto -20px; padding:7px 15px; position:relative; z-index:1; border:2px solid var(--yellow); border-radius:999px; color:var(--yellow); font-family:"Manrope",sans-serif; font-size:.78rem; font-weight:800; letter-spacing:.12em; transform:rotate(-3deg); background:var(--ink); }
+footer { background:var(--ink); color:white; padding:55px 20px; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; }
+footer img { width:170px; height:auto; max-height:195px; object-fit:contain; display:block; }
+footer p { font-family:"Manrope",sans-serif; font-weight:800; color:var(--yellow); margin:18px 0 6px; text-align:center; }
+footer small { color:#989898; text-align:center; }
+footer .since { display:inline-flex; align-items:center; justify-content:center; width:max-content; margin:0 0 16px; padding:7px 18px; position:relative; z-index:1; border:2px solid var(--yellow); border-radius:999px; color:var(--yellow); font-family:"Manrope",sans-serif; font-size:.78rem; font-weight:800; letter-spacing:.12em; transform:none; background:var(--ink); text-align:center; }
+
 
 .floating-cart { position:fixed; z-index:40; left:50%; bottom:18px; width:min(calc(100% - 28px),520px); border:2px solid var(--yellow); background:var(--ink); color:white; border-radius:16px; padding:15px 17px; display:flex; justify-content:space-between; align-items:center; box-shadow:0 12px 40px rgba(0,0,0,.35); }
 .floating-cart span { display:flex; align-items:center; gap:8px; font-weight:700; }
