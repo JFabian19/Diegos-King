@@ -61,8 +61,10 @@ button { cursor:pointer; }
 .category-heading small { display:block; margin-top:9px; color:var(--muted); font-size:.94rem; }
 .dish-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
 .dish-card { background:white; border:2px solid var(--ink); border-radius:18px; overflow:hidden; display:flex; min-height:180px; box-shadow:5px 5px 0 var(--ink); }
-.dish-photo { flex:0 0 42%; min-height:190px; background-repeat:no-repeat; position:relative; border-right:2px solid var(--ink); }
-.dish-photo span { position:absolute; left:8px; bottom:8px; background:rgba(0,0,0,.76); color:white; padding:4px 7px; border-radius:4px; font-size:.56rem; font-weight:800; text-transform:uppercase; letter-spacing:.05em; }
+.dish-photo { flex:0 0 42%; min-height:190px; background-repeat:no-repeat; position:relative; border-right:2px solid var(--ink); cursor:pointer; transition:filter .18s; }
+.dish-photo:hover { filter:brightness(1.05); }
+.dish-photo span { position:absolute; left:8px; bottom:8px; background:rgba(0,0,0,.76); color:white; padding:4px 7px; border-radius:4px; font-size:.56rem; font-weight:800; text-transform:uppercase; letter-spacing:.05em; transition:background .18s; }
+.dish-photo:hover span { background:var(--red); }
 .dish-body { padding:19px; flex:1; display:flex; flex-direction:column; }
 .dish-topline { display:flex; justify-content:space-between; gap:16px; align-items:flex-start; }
 .dish-name>span { display:inline-block; background:var(--yellow); border:1.5px solid var(--ink); border-radius:999px; padding:3px 8px; font-size:.63rem; font-weight:900; text-transform:uppercase; margin-bottom:7px; }
@@ -111,6 +113,19 @@ footer .since { display:inline-flex; align-items:center; justify-content:center;
 .empty-cart h3 { font-family:"Shrikhand",serif; font-weight:400; margin:20px 0 4px; }
 .empty-cart p { color:var(--muted); }
 .empty-cart button { border:0; background:var(--ink); color:white; border-radius:9px; padding:12px 18px; font-weight:900; }
+.preview-backdrop { align-items:center; justify-content:center; padding:18px; z-index:85; }
+.photo-modal { width:min(100%, 460px); max-height:92vh; background:var(--cream); border:3px solid var(--ink); border-radius:20px; overflow:hidden; display:flex; flex-direction:column; box-shadow:10px 10px 0 var(--ink); position:relative; }
+.photo-modal-close { position:absolute; top:12px; right:12px; z-index:10; border:2px solid var(--ink); background:white; width:36px; height:36px; border-radius:50%; display:grid; place-items:center; cursor:pointer; transition:.18s; }
+.photo-modal-close:hover { background:var(--yellow); }
+.photo-modal-frame { width:100%; aspect-ratio:1/1; max-height:50vh; background:#121010; overflow:hidden; display:flex; align-items:center; justify-content:center; }
+.photo-modal-frame img { width:100%; height:100%; object-fit:contain; }
+.photo-modal-footer { padding:18px 20px 20px; display:flex; flex-direction:column; gap:8px; border-top:2px solid var(--ink); background:white; }
+.photo-modal-footer .dish-topline { margin-bottom:0; }
+.photo-modal-footer .dish-topline h4 { font-size:1.25rem; font-family:"Manrope",sans-serif; font-weight:800; }
+.photo-modal-footer .dish-topline strong { font-size:1.25rem; }
+.photo-modal-footer p { color:var(--muted); font-size:.88rem; line-height:1.4; margin:4px 0 10px; }
+.photo-modal-footer button { border:2px solid var(--ink); background:var(--yellow); color:var(--ink); padding:11px 16px; border-radius:10px; font-weight:900; display:inline-flex; align-items:center; justify-content:center; gap:8px; cursor:pointer; transition:.18s; box-shadow:3px 3px 0 var(--ink); }
+.photo-modal-footer button:hover { background:var(--red); color:white; }
 
 @media(max-width:760px){
   .topbar{height:76px}.brand{width:104px;height:58px}.king-note{font-size:1.18rem;gap:5px}.bag-button span{display:none}.hero{min-height:690px}.hero-image{background-position:58% center}.hero-shade{background:linear-gradient(0deg,#090808 0 30%,rgba(9,8,8,.15) 68%,rgba(9,8,8,.35) 100%)}.hero-copy{width:100%;padding:34px 20px 48px}.hero h1{font-size:clamp(2.7rem,13vw,4.4rem);max-width:95%}.hero-copy>p{max-width:82%;font-size:1rem}.bartolito-badge{width:108px;right:18px;bottom:430px;border-width:4px;outline-width:3px;box-shadow:0 0 0 6px var(--red),0 12px 28px rgba(0,0,0,.35)}.quick-info{grid-template-columns:1fr;gap:14px;padding:20px}.quick-info>div{justify-content:flex-start}.quick-info>div:nth-child(n+3){display:none}.menu-intro{padding-top:58px}.category-nav{padding-bottom:35px}.category-heading{grid-template-columns:52px 1fr;gap:12px}.dish-list{grid-template-columns:1fr}.dish-card{min-height:150px}.dish-photo{min-height:160px;flex-basis:40%}.dish-body{padding:16px}.dish-card:not(.has-image) .dish-body{min-height:150px}.mascot-callout{grid-template-columns:115px 1fr;padding:38px 20px;gap:24px;min-height:330px}.mascot-callout img{border-width:5px;outline-width:3px;box-shadow:7px 7px 0 var(--red)}.mascot-callout h2{font-size:clamp(2rem,9vw,3rem)}.mascot-callout button{font-size:.72rem}

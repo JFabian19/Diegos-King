@@ -11,6 +11,7 @@ function App() {
   const [cart, setCart] = useState<CartItem[]>([]);
   const [cartOpen, setCartOpen] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [previewDish, setPreviewDish] = useState<Dish | null>(null);
 
   const cartCount = useMemo(() => cart.reduce((sum, item) => sum + item.cantidad, 0), [cart]);
   const total = useMemo(() => cart.reduce((sum, item) => sum + money(item.precio) * item.cantidad, 0), [cart]);
@@ -82,11 +83,23 @@ function App() {
         <div className="menu-sections">
           {DEFAULT_MENU_DATA.map((category, categoryIndex) => (
             <section className="menu-category" id={category.id} key={category.id}>
-              <div className="category-heading"><span className="category-number">0{categoryIndex + 1}</span><div><p>{category.kicker}</p><h3>{category.nombre}</h3><small>{category.descripcion}</small></div></div>
+              <div className="category-heading"><span className="category-number">{String(categoryIndex + 1).padStart(2, '0')}</span><div><p>{category.kicker}</p><h3>{category.nombre}</h3><small>{category.descripcion}</small></div></div>
               <div className="dish-list">
                 {category.items.map(dish => (
                   <motion.article className={`dish-card ${dish.imagen ? 'has-image' : ''}`} key={dish.nombre} whileHover={{ y: -3 }}>
-                    {dish.imagen && <div className="dish-photo" style={{ backgroundImage: `url(${dish.imagen.src})`, backgroundSize: dish.imagen.size, backgroundPosition: dish.imagen.position }}><span>Imagen referencial</span></div>}
+                    {dish.imagen && (
+                      <div
+                        className="dish-photo"
+                        role="button"
+                        tabIndex={0}
+                        title="Ver imagen completa"
+                        onClick={() => setPreviewDish(dish)}
+                        onKeyDown={e => e.key === 'Enter' && setPreviewDish(dish)}
+                        style={{ backgroundImage: `url(${dish.imagen.src})`, backgroundSize: dish.imagen.size, backgroundPosition: dish.imagen.position }}
+                      >
+                        <span>Ver foto ✦</span>
+                      </div>
+                    )}
                     <div className="dish-body">
                       <div className="dish-topline"><div className="dish-name">{dish.etiqueta && <span>{dish.etiqueta}</span>}<h4>{dish.nombre} {dish.picante && <Flame size={15} aria-label="Picante" />}</h4></div><strong>{dish.precio}</strong></div>
                       <p>{dish.descripcion}</p>
@@ -126,6 +139,52 @@ function App() {
           </motion.aside>
         </motion.div>
       )}</AnimatePresence>
+
+      <AnimatePresence>
+        {previewDish && previewDish.imagen && (
+          <motion.div
+            className="drawer-backdrop preview-backdrop"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setPreviewDish(null)}
+          >
+            <motion.div
+              className="photo-modal"
+              initial={{ scale: 0.92, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.92, opacity: 0 }}
+              onClick={e => e.stopPropagation()}
+            >
+              <button
+                className="photo-modal-close"
+                onClick={() => setPreviewDish(null)}
+                aria-label="Cerrar vista previa"
+              >
+                <X size={20} />
+              </button>
+              <div className="photo-modal-frame">
+                <img src={previewDish.imagen.src} alt={previewDish.nombre} />
+              </div>
+              <div className="photo-modal-footer">
+                <div className="dish-topline">
+                  <h4>{previewDish.nombre}</h4>
+                  <strong>{previewDish.precio}</strong>
+                </div>
+                <p>{previewDish.descripcion}</p>
+                <button
+                  onClick={() => {
+                    add(previewDish);
+                    setPreviewDish(null);
+                  }}
+                >
+                  <Plus size={18} /> Agregar al pedido
+                </button>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }

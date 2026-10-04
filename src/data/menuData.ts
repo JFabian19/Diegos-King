@@ -40,6 +40,9 @@ export const DEFAULT_MENU_DATA: Category[] = [
     kicker: "Salseadas al momento",
     descripcion: "Porciones jugosas, crocantes y cargadas de sabor.",
     items: [
+      { nombre: "Especial de Alitas", descripcion: "4 alitas BBQ, salchichas cerdeñas y papitas crujientes y saladitas.", precio: "S/ 24.00", etiqueta: "Promoción", imagen: { src: "/media/especial-de-alitas.jpg", size: "cover", position: "center 65%" } },
+      { nombre: "Ronda de Alitas", descripcion: "12 alitas: 4 BBQ, 4 picantes y 4 acevichadas. Acompañadas de papas y salchichas.", precio: "S/ 48.00", etiqueta: "Para compartir", picante: true, imagen: { src: "/media/ronda-de-alitas.jpg", size: "cover", position: "center" } },
+      { nombre: "Ronda de Alitas Familiar", descripcion: "24 alitas: 8 BBQ, 8 BBQ picantes y 8 acevichadas, acompañadas de papas crocantes y salchichas ahumadas.", precio: "S/ 96.00", etiqueta: "Familiar", picante: true, imagen: { src: "/media/ronda-de-alitas-familiar.jpg", size: "cover", position: "center" } },
       { nombre: "Alitas BBQ Clásicas", descripcion: "6 alitas bañadas en BBQ dulce ahumada.", precio: "S/ 19.00", etiqueta: "Top" },
       { nombre: "Alitas Fuego King", descripcion: "6 alitas en salsa picante de la casa.", precio: "S/ 20.00", picante: true },
       { nombre: "Alitas Acevichadas", descripcion: "6 alitas con crema acevichada y toque cítrico.", precio: "S/ 20.00" },
@@ -53,11 +56,43 @@ export const DEFAULT_MENU_DATA: Category[] = [
     kicker: "Clásicos con corona",
     descripcion: "Papas recién hechas, salchicha y combinaciones para compartir o no.",
     items: [
+      { nombre: "Salchi Pobre", descripcion: "Papas crocantes, abundantes salchichas, plátano frito y huevo frito con cremas.", precio: "S/ 22.00", etiqueta: "Favorito", imagen: { src: "/media/salchi-pobre.jpg", size: "cover", position: "center 55%" } },
+      { nombre: "Salchichas Broaster", descripcion: "Pollo broaster crocante, salchichas, papas crocantes y arroz chaufa al wok.", precio: "S/ 22.00", etiqueta: "Completo", imagen: { src: "/media/salchichas-broaster.jpg", size: "cover", position: "center 65%" } },
       { nombre: "Salchi Clásica", descripcion: "Papas, salchicha y cremas de la casa.", precio: "S/ 12.00" },
       { nombre: "Salchi Brava", descripcion: "Papas, salchicha, queso y salsa picante.", precio: "S/ 16.00", picante: true },
       { nombre: "Salchi Broster", descripcion: "Papas, salchicha y pollo broster crocante.", precio: "S/ 18.00" },
       { nombre: "Salchi King", descripcion: "Papas, doble salchicha, pollo, huevo y queso.", precio: "S/ 22.00", etiqueta: "La reina" },
       { nombre: "Salchi Mollejitas", descripcion: "Papas, salchicha y mollejitas doradas.", precio: "S/ 19.00" }
+    ]
+  },
+  {
+    id: "chaufas",
+    nombre: "Chaufas",
+    kicker: "Directo del wok",
+    descripcion: "Arroz al wok con sabor ahumado, carnes seleccionadas y acompañamientos que llenan de verdad.",
+    items: [
+      { nombre: "Arroz Chaufa Pobre", descripcion: "Arroz chaufa al wok servido con plátano frito y huevo frito montado.", precio: "S/ 25.00", etiqueta: "Top", imagen: { src: "/media/arroz-chaufa-pobre.jpg", size: "cover", position: "center 55%" } },
+      { nombre: "Chaufa con Lomo", descripcion: "Jugoso lomo saltado con carne, tomate, cebolla y papas, acompañado de arroz chaufa.", precio: "S/ 22.00", etiqueta: "Nuevo", imagen: { src: "/media/chaufa-con-lomo.jpg", size: "cover", position: "center" } },
+      { nombre: "Chaufialitas BBQ", descripcion: "Arroz chaufa al wok acompañado de alitas BBQ, papas fritas y salchichas.", precio: "S/ 30.00", etiqueta: "Recomendado", imagen: { src: "/media/chaufialitas-bbq.jpg", size: "cover", position: "center" } },
+      { nombre: "Aeropuerto", descripcion: "Clásico aeropuerto salteado al wok con arroz chaufa, fideos y trozos de pollo.", precio: "S/ 18.00", imagen: { src: "/media/aeropuerto.jpg", size: "cover", position: "center 55%" } }
+    ]
+  },
+  {
+    id: "hamburguesas",
+    nombre: "Hamburguesas",
+    kicker: "Crocantes y contundentes",
+    descripcion: "Sándwiches y hamburguesas con filetes crujientes y papas doradas.",
+    items: [
+      { nombre: "Burguer King", descripcion: "Filete de pollo al panko, huevo frito, salchichas y porción de papas crocantes.", precio: "S/ 20.00", etiqueta: "Especial", imagen: { src: "/media/burger-king.jpg", size: "cover", position: "center" } }
+    ]
+  },
+  {
+    id: "parrillas",
+    nombre: "Parrillas",
+    kicker: "A la plancha y doraditas",
+    descripcion: "Porciones sabrosas con mollejitas y chorizo parrillero bien calientes.",
+    items: [
+      { nombre: "Mollejitas", descripcion: "Mollejitas doradas a la plancha acompañadas de chorizo parrillero y papas crocantes.", precio: "S/ 35.00", etiqueta: "Power", imagen: { src: "/media/mollejitas.jpg", size: "cover", position: "center 68%" } }
     ]
   },
   {
