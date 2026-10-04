@@ -39,14 +39,14 @@ export const DEFAULT_MENU_DATA: Category[] = [
     kicker: "El antojo en una mano",
     descripcion: "Papas doradas, salchicha y tu proteína favorita con salsa de la casa.",
     items: [
-      { nombre: "Cono Mollejitas", descripcion: "Mollejitas doradas, papas y salchicha.", precio: "S/ 20.00", etiqueta: "Nuevo", imagen: { src: "/media/conos-menu.webp", size: "400% 200%", position: "0% 0%" } },
-      { nombre: "Cono BBQ Picante", descripcion: "Alitas BBQ picantes, papas y salchicha.", precio: "S/ 24.00", etiqueta: "Favorito", picante: true, imagen: { src: "/media/conos-menu.webp", size: "400% 200%", position: "33.33% 0%" } },
-      { nombre: "Salchipapa Mix", descripcion: "Huevo, papas crocantes, salchicha y cremas.", precio: "S/ 19.00", imagen: { src: "/media/conos-menu.webp", size: "400% 200%", position: "66.66% 0%" } },
-      { nombre: "Cono Alitas Broster", descripcion: "Alitas broster, papas, salchicha y salsa tártara.", precio: "S/ 20.00", etiqueta: "Nuevo", imagen: { src: "/media/conos-menu.webp", size: "400% 200%", position: "100% 0%" } },
-      { nombre: "Cono Alitas BBQ", descripcion: "Alitas glaseadas BBQ, papas y salchicha.", precio: "S/ 24.00" },
-      { nombre: "Cono Acevichado", descripcion: "Alitas acevichadas, papas, salchicha y cebollita.", precio: "S/ 24.00" },
-      { nombre: "Honey Mustard King", descripcion: "Alitas con miel y mostaza, papas y salchicha.", precio: "S/ 24.00" },
-      { nombre: "Súper Cono", descripcion: "Papas, doble salchicha y todas las cremas.", precio: "S/ 16.00", etiqueta: "Buenazo" }
+      { nombre: "Cono Mollejitas", descripcion: "Mollejitas doradas, papas y salchicha.", precio: "S/ 20.00", etiqueta: "Nuevo", imagen: { src: "/media/cono-mollejitas.webp", size: "cover", position: "center" } },
+      { nombre: "Cono BBQ Picante", descripcion: "Alitas BBQ picantes, papas y salchicha.", precio: "S/ 24.00", etiqueta: "Favorito", picante: true, imagen: { src: "/media/cono-bbq-picante.webp", size: "cover", position: "center" } },
+      { nombre: "Salchipapa Mix", descripcion: "Huevo, papas crocantes, salchicha y cremas.", precio: "S/ 19.00", imagen: { src: "/media/salchipapa-mix.webp", size: "cover", position: "center" } },
+      { nombre: "Cono Alitas Broster", descripcion: "Alitas broster, papas, salchicha y salsa tártara.", precio: "S/ 20.00", etiqueta: "Nuevo", imagen: { src: "/media/cono-alitas-broaster.webp", size: "cover", position: "center" } },
+      { nombre: "Cono Alitas BBQ", descripcion: "Alitas glaseadas BBQ, papas y salchicha.", precio: "S/ 24.00", imagen: { src: "/media/cono-alitas-bbq.webp", size: "cover", position: "center" } },
+      { nombre: "Cono Acevichado", descripcion: "Alitas acevichadas, papas, salchicha y cebollita.", precio: "S/ 24.00", imagen: { src: "/media/cono-acevichado.webp", size: "cover", position: "center" } },
+      { nombre: "Honey Mustard King", descripcion: "Alitas con miel y mostaza, papas y salchicha.", precio: "S/ 24.00", imagen: { src: "/media/honey-mustard-king.webp", size: "cover", position: "center" } },
+      { nombre: "Súper Cono", descripcion: "Papas, doble salchicha y todas las cremas.", precio: "S/ 16.00", etiqueta: "Buenazo", imagen: { src: "/media/super-cono.webp", size: "cover", position: "center" } }
     ]
   },
   {
