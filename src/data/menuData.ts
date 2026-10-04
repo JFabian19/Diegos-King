@@ -7,6 +7,7 @@ export interface Dish {
   etiqueta?: string;
   picante?: boolean;
   imagen?: ImageCrop;
+  permiteBobas?: boolean;
 }
 
 export interface Category {
@@ -16,6 +17,20 @@ export interface Category {
   descripcion: string;
   items: Dish[];
 }
+
+export interface BobaOption {
+  nombre: string;
+  precio: number;
+}
+
+export const BOBA_OPTIONS: BobaOption[] = [
+  { nombre: "Frambuesa", precio: 5 },
+  { nombre: "Mango", precio: 5 },
+  { nombre: "Maracuyá", precio: 5 },
+  { nombre: "Arándano", precio: 5 },
+  { nombre: "Fresa", precio: 5 },
+  { nombre: "Chicle", precio: 5 }
+];
 
 export const DEFAULT_MENU_DATA: Category[] = [
   {
@@ -83,6 +98,32 @@ export const DEFAULT_MENU_DATA: Category[] = [
     descripcion: "Porciones sabrosas con mollejitas y chorizo parrillero bien calientes.",
     items: [
       { nombre: "Mollejitas", descripcion: "Mollejitas doradas a la plancha acompañadas de chorizo parrillero y papas crocantes.", precio: "S/ 35.00", etiqueta: "Power", imagen: { src: "/media/mollejitas.webp", size: "cover", position: "center 68%" } }
+    ]
+  },
+  {
+    id: "bubble-tea",
+    nombre: "Bubble Tea",
+    kicker: "Frío, cremoso y con perlas",
+    descripcion: "Té con leche y sabores frutales servidos con hielo y perlas.",
+    items: [
+      { nombre: "Bubble Tea Light Milk", descripcion: "Té con leche cremoso, jarabe de caramelo brown sugar y perlas de tapioca.", precio: "S/ 14.00", etiqueta: "Favorito", imagen: { src: "/media/bubble-tea-light-milk.webp", size: "cover", position: "center" }, permiteBobas: true },
+      { nombre: "Bubble Tea Lychee Milk con topping de arándano", descripcion: "Té de lychee con leche suave y delicioso topping de arándano.", precio: "S/ 15.00", etiqueta: "Nuevo", imagen: { src: "/media/bubble-tea-lychee-milk.webp", size: "cover", position: "center" }, permiteBobas: true },
+      { nombre: "Strawberry Milk Tea", descripcion: "Té con leche y fresa, jarabe dulce y perlas suaves.", precio: "S/ 14.00", etiqueta: "Frutal", imagen: { src: "/media/bubble-tea-milk-fresa.webp", size: "cover", position: "center" }, permiteBobas: true },
+      { nombre: "Mango Milk Tea", descripcion: "Té con leche y mango cremoso con perlas.", precio: "S/ 14.00", imagen: { src: "/media/bubble-tea-milk-mango.webp", size: "cover", position: "center" }, permiteBobas: true },
+      { nombre: "Té Frutal de Fresa", descripcion: "Té helado refrescante sabor a fresa natural con popping boba.", precio: "S/ 12.00", imagen: { src: "/media/bubble-tea-fresa.webp", size: "cover", position: "center" }, permiteBobas: true },
+      { nombre: "Té Limón & Lychee", descripcion: "Té cítrico y aromático de limón con lychee y popping boba.", precio: "S/ 12.00", imagen: { src: "/media/bubble-tea-limon-lychee.webp", size: "cover", position: "center" }, permiteBobas: true },
+      { nombre: "Té Frutal de Mango", descripcion: "Té helado de mango tropical con popping boba.", precio: "S/ 12.00", imagen: { src: "/media/bubble-tea-mango.webp", size: "cover", position: "center" }, permiteBobas: true }
+    ]
+  },
+  {
+    id: "frappes",
+    nombre: "Frappés",
+    kicker: "Bien helados, bien cargados",
+    descripcion: "Batidos cremosos coronados con chantilly y bobas.",
+    items: [
+      { nombre: "Frappé de Fresa con Bobas", descripcion: "Batido frappé cremoso de fresa con chantilly y bobas.", precio: "S/ 15.00", etiqueta: "Más pedido", imagen: { src: "/media/frappe-fresa-bobas.webp", size: "cover", position: "center" }, permiteBobas: true },
+      { nombre: "Frappé de Mango con Bobas", descripcion: "Frappé cremoso de mango coronado con chantilly y bobas de mango.", precio: "S/ 15.00", imagen: { src: "/media/frappe-mango-bobas-mango.webp", size: "cover", position: "center" }, permiteBobas: true },
+      { nombre: "Frappé Matcha con Bobas de Arándano", descripcion: "Frappé cremoso de té verde matcha con chantilly y bobas de arándano.", precio: "S/ 16.00", etiqueta: "Especial", imagen: { src: "/media/frappe-matcha-bobas-arandano.webp", size: "cover", position: "center" }, permiteBobas: true }
     ]
   }
 ];
