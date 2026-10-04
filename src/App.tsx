@@ -41,7 +41,7 @@ function App() {
   return (
     <div className="site-shell">
       <header className="topbar">
-        <a className="brand" href="#inicio" aria-label="Ir al inicio"><img src="/media/logo-diegos-king.png" alt="Diego's King" /></a>
+        <a className="brand" href="#inicio" aria-label="Ir al inicio"><img src="/media/logo-diegos-king.webp" alt="Diego's King" /></a>
         <div className="king-note" aria-label="I love Diego's King"><span>I</span><b>♥</b><span>DK</span></div>
         <button className="bag-button" onClick={() => setCartOpen(true)} aria-label={`Abrir pedido, ${cartCount} productos`}>
           <ShoppingBag size={20} /><span>Pedido</span><b>{cartCount}</b>
@@ -62,7 +62,7 @@ function App() {
             <button className="primary-cta" onClick={() => scrollTo('conos')}>VER LA CARTA <ChevronDown size={18} /></button>
           </div>
           <div className="bartolito-badge" aria-label="Bartolito, mascota de Diego's King">
-            <img src="/media/bartolito.png" alt="Bartolito" />
+            <img src="/media/bartolito.webp" alt="Bartolito" />
           </div>
         </section>
 
@@ -112,12 +112,12 @@ function App() {
           ))}
         </div>
 
-        <section className="mascot-callout"><img src="/media/mascota.png" alt="Mascota de Diego's King" /><div><span>¿YA ELEGISTE?</span><h2>No dejes que<br />se enfríe.</h2><button onClick={() => setCartOpen(true)}>REVISAR MI PEDIDO <ShoppingBag size={18} /></button></div></section>
+        <section className="mascot-callout"><img src="/media/mascota.webp" alt="Mascota de Diego's King" /><div><span>¿YA ELEGISTE?</span><h2>No dejes que<br />se enfríe.</h2><button onClick={() => setCartOpen(true)}>REVISAR MI PEDIDO <ShoppingBag size={18} /></button></div></section>
       </main>
 
       <footer>
         <span className="since">SINCE 2019</span>
-        <img src="/media/logo-footer.png" alt="Diego's King" />
+        <img src="/media/logo-footer.webp" alt="Diego's King" />
         <p>Conos · Alitas · Salchipapas · Chaufas</p>
         <small>© 2026 Diego's King · Carta digital</small>
       </footer>
