@@ -58,7 +58,7 @@ function App() {
           <div className="hero-copy">
             <div className="eyebrow"><Flame size={16} /> HOLA, PAPERITOS</div>
             <h1>Hola, mis<br /><em>King<wbr />lovers.</em></h1>
-            <p>El antojo manda aquí: conos cargados, alitas bañadas y bubble tea para compartir.</p>
+            <p>El antojo manda aquí: conos cargados, alitas bañadas, chaufas y salchipapas para compartir.</p>
             <button className="primary-cta" onClick={() => scrollTo('conos')}>VER LA CARTA <ChevronDown size={18} /></button>
           </div>
           <div className="bartolito-badge" aria-label="Bartolito, mascota de Diego's King">
@@ -118,7 +118,7 @@ function App() {
       <footer>
         <span className="since">SINCE 2019</span>
         <img src="/media/logo-footer.png" alt="Diego's King" />
-        <p>Papas · Alitas · Bubble Tea</p>
+        <p>Conos · Alitas · Salchipapas · Chaufas</p>
         <small>© 2026 Diego's King · Carta digital</small>
       </footer>
 
