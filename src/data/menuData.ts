@@ -55,7 +55,7 @@ export const DEFAULT_MENU_DATA: Category[] = [
     kicker: "Salseadas al momento",
     descripcion: "Porciones jugosas, crocantes y cargadas de sabor.",
     items: [
-      { nombre: "Especial de Alitas", descripcion: "4 alitas BBQ, salchichas cerdeñas y papitas crujientes y saladitas.", precio: "S/ 24.00", etiqueta: "Promoción", imagen: { src: "/media/especial-de-alitas.webp", size: "cover", position: "center 65%" } },
+      { nombre: "Especial de Alitas", descripcion: "6 alitas BBQ, salchichas cerdeñas y papitas crujientes y saladitas.", precio: "S/ 24.00", etiqueta: "Promoción", imagen: { src: "/media/especial-de-alitas.webp", size: "cover", position: "center 65%" } },
       { nombre: "Ronda de Alitas", descripcion: "12 alitas: 4 BBQ, 4 picantes y 4 acevichadas. Acompañadas de papas y salchichas.", precio: "S/ 48.00", etiqueta: "Para compartir", picante: true, imagen: { src: "/media/ronda-de-alitas.webp", size: "cover", position: "center" } },
       { nombre: "Ronda de Alitas Familiar", descripcion: "24 alitas: 8 BBQ, 8 BBQ picantes y 8 acevichadas, acompañadas de papas crocantes y salchichas ahumadas.", precio: "S/ 96.00", etiqueta: "Familiar", picante: true, imagen: { src: "/media/ronda-de-alitas-familiar.webp", size: "cover", position: "center" } }
     ]
@@ -106,8 +106,7 @@ export const DEFAULT_MENU_DATA: Category[] = [
     kicker: "Frío, cremoso y con perlas",
     descripcion: "Té con leche y sabores frutales servidos con hielo y perlas.",
     items: [
-      { nombre: "Bubble Tea Light Milk", descripcion: "Té con leche cremoso, jarabe de caramelo brown sugar y perlas de tapioca.", precio: "S/ 14.00", etiqueta: "Favorito", imagen: { src: "/media/bubble-tea-light-milk.webp", size: "cover", position: "center" }, permiteBobas: true },
-      { nombre: "Bubble Tea Lychee Milk con Topping de Arándano", descripcion: "Té de lychee con leche suave y delicioso topping de arándano.", precio: "S/ 15.00", etiqueta: "Nuevo", imagen: { src: "/media/bubble-tea-lychee-milk.webp", size: "cover", position: "center" }, permiteBobas: true },
+      { nombre: "Bubble Tea Lychee Milk con Topping de Arándanos", descripcion: "Té de lychee con leche suave y delicioso topping de arándanos.", precio: "S/ 15.00", etiqueta: "Favorito", imagen: { src: "/media/bubble-tea-light-milk.webp", size: "cover", position: "center" }, permiteBobas: true },
       { nombre: "Bubble Tea Milk de Fresa", descripcion: "Té con leche y fresa, jarabe dulce y perlas suaves.", precio: "S/ 15.00", etiqueta: "Frutal", imagen: { src: "/media/bubble-tea-milk-fresa.webp", size: "cover", position: "center" }, permiteBobas: true },
       { nombre: "Bubble Tea Milk de Mango", descripcion: "Té con leche y mango cremoso con perlas.", precio: "S/ 15.00", imagen: { src: "/media/bubble-tea-milk-mango.webp", size: "cover", position: "center" }, permiteBobas: true },
       { nombre: "Bubble Tea de Fresa", descripcion: "Té helado refrescante sabor a fresa natural con popping boba.", precio: "S/ 15.00", imagen: { src: "/media/bubble-tea-fresa.webp", size: "cover", position: "center" }, permiteBobas: true },
