@@ -107,12 +107,12 @@ export const DEFAULT_MENU_DATA: Category[] = [
     descripcion: "Té con leche y sabores frutales servidos con hielo y perlas.",
     items: [
       { nombre: "Bubble Tea Light Milk", descripcion: "Té con leche cremoso, jarabe de caramelo brown sugar y perlas de tapioca.", precio: "S/ 14.00", etiqueta: "Favorito", imagen: { src: "/media/bubble-tea-light-milk.webp", size: "cover", position: "center" }, permiteBobas: true },
-      { nombre: "Bubble Tea Lychee Milk con topping de arándano", descripcion: "Té de lychee con leche suave y delicioso topping de arándano.", precio: "S/ 15.00", etiqueta: "Nuevo", imagen: { src: "/media/bubble-tea-lychee-milk.webp", size: "cover", position: "center" }, permiteBobas: true },
-      { nombre: "Strawberry Milk Tea", descripcion: "Té con leche y fresa, jarabe dulce y perlas suaves.", precio: "S/ 14.00", etiqueta: "Frutal", imagen: { src: "/media/bubble-tea-milk-fresa.webp", size: "cover", position: "center" }, permiteBobas: true },
-      { nombre: "Mango Milk Tea", descripcion: "Té con leche y mango cremoso con perlas.", precio: "S/ 14.00", imagen: { src: "/media/bubble-tea-milk-mango.webp", size: "cover", position: "center" }, permiteBobas: true },
-      { nombre: "Té Frutal de Fresa", descripcion: "Té helado refrescante sabor a fresa natural con popping boba.", precio: "S/ 12.00", imagen: { src: "/media/bubble-tea-fresa.webp", size: "cover", position: "center" }, permiteBobas: true },
-      { nombre: "Té Limón & Lychee", descripcion: "Té cítrico y aromático de limón con lychee y popping boba.", precio: "S/ 12.00", imagen: { src: "/media/bubble-tea-limon-lychee.webp", size: "cover", position: "center" }, permiteBobas: true },
-      { nombre: "Té Frutal de Mango", descripcion: "Té helado de mango tropical con popping boba.", precio: "S/ 12.00", imagen: { src: "/media/bubble-tea-mango.webp", size: "cover", position: "center" }, permiteBobas: true }
+      { nombre: "Bubble Tea Lychee Milk con Topping de Arándano", descripcion: "Té de lychee con leche suave y delicioso topping de arándano.", precio: "S/ 15.00", etiqueta: "Nuevo", imagen: { src: "/media/bubble-tea-lychee-milk.webp", size: "cover", position: "center" }, permiteBobas: true },
+      { nombre: "Bubble Tea Milk de Fresa", descripcion: "Té con leche y fresa, jarabe dulce y perlas suaves.", precio: "S/ 15.00", etiqueta: "Frutal", imagen: { src: "/media/bubble-tea-milk-fresa.webp", size: "cover", position: "center" }, permiteBobas: true },
+      { nombre: "Bubble Tea Milk de Mango", descripcion: "Té con leche y mango cremoso con perlas.", precio: "S/ 15.00", imagen: { src: "/media/bubble-tea-milk-mango.webp", size: "cover", position: "center" }, permiteBobas: true },
+      { nombre: "Bubble Tea de Fresa", descripcion: "Té helado refrescante sabor a fresa natural con popping boba.", precio: "S/ 15.00", imagen: { src: "/media/bubble-tea-fresa.webp", size: "cover", position: "center" }, permiteBobas: true },
+      { nombre: "Bubble Tea con Limón y Lychee", descripcion: "Té cítrico y aromático de limón con lychee y popping boba.", precio: "S/ 15.00", imagen: { src: "/media/bubble-tea-limon-lychee.webp", size: "cover", position: "center" }, permiteBobas: true },
+      { nombre: "Bubble Tea de Mango", descripcion: "Té helado de mango tropical con popping boba.", precio: "S/ 15.00", imagen: { src: "/media/bubble-tea-mango.webp", size: "cover", position: "center" }, permiteBobas: true }
     ]
   },
   {
@@ -121,9 +121,9 @@ export const DEFAULT_MENU_DATA: Category[] = [
     kicker: "Bien helados, bien cargados",
     descripcion: "Batidos cremosos coronados con chantilly y bobas.",
     items: [
-      { nombre: "Frappé de Fresa con Bobas", descripcion: "Batido frappé cremoso de fresa con chantilly y bobas.", precio: "S/ 15.00", etiqueta: "Más pedido", imagen: { src: "/media/frappe-fresa-bobas.webp", size: "cover", position: "center" }, permiteBobas: true },
-      { nombre: "Frappé de Mango con Bobas", descripcion: "Frappé cremoso de mango coronado con chantilly y bobas de mango.", precio: "S/ 15.00", imagen: { src: "/media/frappe-mango-bobas-mango.webp", size: "cover", position: "center" }, permiteBobas: true },
-      { nombre: "Frappé Matcha con Bobas de Arándano", descripcion: "Frappé cremoso de té verde matcha con chantilly y bobas de arándano.", precio: "S/ 16.00", etiqueta: "Especial", imagen: { src: "/media/frappe-matcha-bobas-arandano.webp", size: "cover", position: "center" }, permiteBobas: true }
+      { nombre: "Frappé de Fresa con Bobas", descripcion: "Batido frappé cremoso de fresa con chantilly y bobas.", precio: "S/ 20.00", etiqueta: "Más pedido", imagen: { src: "/media/frappe-fresa-bobas.webp", size: "cover", position: "center" }, permiteBobas: true },
+      { nombre: "Frappé de Mango con Bobas de Mango", descripcion: "Frappé cremoso de mango coronado con chantilly y bobas de mango.", precio: "S/ 20.00", imagen: { src: "/media/frappe-mango-bobas-mango.webp", size: "cover", position: "center" }, permiteBobas: true },
+      { nombre: "Frappé Matcha con Bobas de Arándano", descripcion: "Frappé cremoso de té verde matcha con chantilly y bobas de arándano.", precio: "S/ 20.00", etiqueta: "Especial", imagen: { src: "/media/frappe-matcha-bobas-arandano.webp", size: "cover", position: "center" }, permiteBobas: true }
     ]
   }
 ];
