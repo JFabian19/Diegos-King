@@ -56,7 +56,7 @@ function App() {
   };
 
   const handleAddClick = (dish: Dish, categoryId?: string) => {
-    if (categoryId === 'bubble-tea' || categoryId === 'frappes' || dish.permiteBobas) {
+    if (categoryId === 'bubble-tea' || categoryId === 'frappes' || categoryId === 'sodas-italianas' || dish.permiteBobas) {
       setBobaModalDish(dish);
       setSelectedBobas([]);
     } else {
@@ -109,7 +109,7 @@ function App() {
           <div className="hero-copy">
             <div className="eyebrow"><Flame size={16} /> HOLA, PAPERITOS</div>
             <h1>Hola, mis<br /><em>King<wbr />lovers.</em></h1>
-            <p>El antojo manda aquí: conos cargados, alitas bañadas, chaufas y bubble tea para compartir.</p>
+            <p>El antojo manda aquí: conos cargados, alitas bañadas, chaufas, bubble tea, sodas italianas y frappés para compartir.</p>
             <button className="primary-cta" onClick={() => scrollTo('conos')}>VER LA CARTA <ChevronDown size={18} /></button>
           </div>
           <div className="bartolito-badge" aria-label="Bartolito, mascota de Diego's King">
@@ -135,6 +135,11 @@ function App() {
           {DEFAULT_MENU_DATA.map((category, categoryIndex) => (
             <section className="menu-category" id={category.id} key={category.id}>
               <div className="category-heading"><span className="category-number">{String(categoryIndex + 1).padStart(2, '0')}</span><div><p>{category.kicker}</p><h3>{category.nombre}</h3><small>{category.descripcion}</small></div></div>
+              {category.banner && (
+                <div className="category-banner">
+                  <img src={category.banner} alt={category.nombre} />
+                </div>
+              )}
               <div className="dish-list">
                 {category.items.map(dish => (
                   <motion.article className={`dish-card ${dish.imagen ? 'has-image' : ''}`} key={dish.nombre} whileHover={{ y: -3 }}>
@@ -177,7 +182,7 @@ function App() {
       <footer>
         <span className="since">SINCE 2019</span>
         <img src="/media/logo-footer.webp" alt="Diego's King" />
-        <p>Conos · Alitas · Salchipapas · Chaufas · Bubble Tea</p>
+        <p>Conos · Alitas · Salchipapas · Chaufas · Bubble Tea · Sodas Italianas · Frappés</p>
         <small>© 2026 Diego's King · Carta digital</small>
       </footer>
 
