@@ -42,7 +42,7 @@ export const DEFAULT_MENU_DATA: Category[] = [
     items: [
       { nombre: "Cono Mollejitas", descripcion: "Mollejitas doradas, papas y salchicha.", precio: "S/ 20.00", etiqueta: "Nuevo", imagen: { src: "/media/cono-mollejitas.webp", size: "cover", position: "center" } },
       { nombre: "Cono BBQ Picante", descripcion: "Alitas BBQ picantes, papas y salchicha.", precio: "S/ 24.00", etiqueta: "Favorito", picante: true, imagen: { src: "/media/cono-bbq-picante.webp", size: "cover", position: "center" } },
-      { nombre: "Salchipapa Mix", descripcion: "Huevo, papas crocantes, salchicha y cremas.", precio: "S/ 19.00", imagen: { src: "/media/salchipapa-mix.webp", size: "cover", position: "center" } },
+      { nombre: "Cono Salchimix", descripcion: "Huevo, papas crocantes, salchicha y cremas.", precio: "S/ 19.00", imagen: { src: "/media/cono-salchimix.webp", size: "cover", position: "center" } },
       { nombre: "Cono Alitas Broster", descripcion: "Alitas broster, papas, salchicha y salsa tártara.", precio: "S/ 20.00", etiqueta: "Nuevo", imagen: { src: "/media/cono-alitas-broaster.webp", size: "cover", position: "center" } },
       { nombre: "Cono Alitas BBQ", descripcion: "Alitas glaseadas BBQ, papas y salchicha.", precio: "S/ 24.00", imagen: { src: "/media/cono-alitas-bbq.webp", size: "cover", position: "center" } },
       { nombre: "Cono Acevichado", descripcion: "Alitas acevichadas, papas, salchicha y cebollita.", precio: "S/ 24.00", imagen: { src: "/media/cono-acevichado.webp", size: "cover", position: "center" } },
@@ -159,6 +159,17 @@ export const DEFAULT_MENU_DATA: Category[] = [
       { nombre: "Frappé de Fresa con Bobas", descripcion: "Batido frappé cremoso de fresa con chantilly y bobas.", precio: "S/ 20.00", etiqueta: "Más pedido", imagen: { src: "/media/frappe-fresa-bobas.webp", size: "cover", position: "center" }, permiteBobas: true },
       { nombre: "Frappé de Mango con Bobas de Mango", descripcion: "Frappé cremoso de mango coronado con chantilly y bobas de mango.", precio: "S/ 20.00", imagen: { src: "/media/frappe-mango-bobas-mango.webp", size: "cover", position: "center" }, permiteBobas: true },
       { nombre: "Frappé Matcha con Bobas de Arándano", descripcion: "Frappé cremoso de té verde matcha con chantilly y bobas de arándano.", precio: "S/ 20.00", etiqueta: "Especial", imagen: { src: "/media/frappe-matcha-bobas-arandano.webp", size: "cover", position: "center" }, permiteBobas: true }
+    ]
+  },
+  {
+    id: "jugos",
+    nombre: "Jugos",
+    kicker: "100% Fruta fresca",
+    descripcion: "Jugos naturales preparados al instante con fruta fresca seleccionada y bien helados.",
+    items: [
+      { nombre: "Jugo de Mango", descripcion: "Jugo natural y cremoso de mango fresco, servido bien frío.", precio: "S/ 15.00", etiqueta: "Natural", imagen: { src: "/media/jugo-mango.webp", size: "cover", position: "center" } },
+      { nombre: "Jugo de Papaya", descripcion: "Clásico y refrescante jugo de papaya natural recién preparado.", precio: "S/ 12.00", etiqueta: "Clásico", imagen: { src: "/media/jugo-papaya.webp", size: "cover", position: "center" } },
+      { nombre: "Jugo de Piña", descripcion: "Jugo natural de piña dulce y refrescante, servido bien helado.", precio: "S/ 12.00", etiqueta: "Refrescante", imagen: { src: "/media/jugo-pina.webp", size: "cover", position: "center" } }
     ]
   }
 ];
